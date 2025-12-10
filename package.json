@@ -30,3 +30,6 @@
     "vite": "^7.1.7"
   }
 }
+
+
+// AI fix suggestion (ziuuddos): Review and improve: The project name 'json-tree-visulizer' has a typo. It should be 'json-tree-visualizer'. This can lead to confusion and issues when publishing or sharing the package.
