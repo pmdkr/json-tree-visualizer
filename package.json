@@ -30,3 +30,6 @@
     "vite": "^7.1.7"
   }
 }
+
+
+// AI fix suggestion (ziuuddos): Review and improve: Ensure that all dependencies are regularly updated to mitigate vulnerabilities. Use tools like `npm audit` to check for known vulnerabilities.
