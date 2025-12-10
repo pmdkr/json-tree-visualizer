@@ -18,3 +18,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## Application live link : https://pramod-lohra-json-tree-visualizer.netlify.app/
+
+
+// AI fix suggestion (ziuuddos): Review and improve: The README is incomplete. Ensure that it covers all necessary setup instructions, including how to run the project and any additional configuration needed.
