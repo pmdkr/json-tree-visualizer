@@ -21,3 +21,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 // AI fix suggestion (ziuuddos): Review and improve: The README is incomplete. Ensure that it covers all necessary setup instructions, including how to run the project and any additional configuration needed.
+
+
+// AI fix suggestion (t859fexx): Review and improve: Expand the README to include setup instructions, usage examples, and contribution guidelines for better onboarding.
