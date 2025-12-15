@@ -372,3 +372,5 @@ function App() {
 }
 
 export default App;
+
+// AI fix suggestion (ppfeqtpa): Review and improve: The app accepts raw JSON input from users but does not show explicit validation or sanitization before parsing or rendering. This can lead to injection attacks or runtime errors. Ensure robust JSON validation and error handling.
