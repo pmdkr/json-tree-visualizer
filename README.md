@@ -1,6 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. It is designed to help developers quickly bootstrap a React application using Vite as the build tool, enabling fast development and efficient production builds.
+
+## Project Purpose
+
+The purpose of this project is to provide a streamlined environment for developing React applications with modern tooling. By using Vite, developers benefit from features like hot module replacement (HMR) for a better development experience and optimized builds for production.
 
 Currently, two official plugins are available:
 
@@ -15,9 +19,13 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+## Getting Started
 
+To get started with this template, follow these steps:
+
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate into the project directory: `cd <project-directory>`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
 ## Application live link : https://pramod-lohra-json-tree-visualizer.netlify.app/
-
-
-// AI fix suggestion (ziuuddos): Review and improve: The README is incomplete. Ensure that it covers all necessary setup instructions, including how to run the project and any additional configuration needed.
