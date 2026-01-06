@@ -1,20 +1,26 @@
 // src/hooks/useTheme.js
 import { useState, useEffect } from 'react';
 
+const updateDocumentTheme = (isDark) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.classList.toggle('dark', isDark);
+  }
+};
+
 export const useTheme = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') || 'light' : 'light';
     setTheme(savedTheme);
-    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    updateDocumentTheme(savedTheme === 'dark');
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    updateDocumentTheme(newTheme === 'dark');
   };
 
   return { theme, toggleTheme };
