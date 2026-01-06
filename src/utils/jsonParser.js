@@ -249,3 +249,5 @@ export const findNodeByPath = (nodes, searchPath) => {
     id: foundNode?.id
   };
 };
+
+// TODO: AI fix suggestion (5on3odcs): Review and improve: Global mutable variable 'nodeId' used for generating node IDs can cause issues in concurrent or asynchronous environments. Consider encapsulating ID generation to avoid potential collisions or side effects.

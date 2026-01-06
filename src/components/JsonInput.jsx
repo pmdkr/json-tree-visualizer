@@ -1,8 +1,9 @@
 // src/components/JsonInput.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const JsonInput = ({ onSubmit, onClear, sampleJson, error }) => {
   const [jsonInput, setJsonInput] = useState('');
+  const [isSampleUsed, setIsSampleUsed] = useState(false);
 
   const handleSubmit = () => {
     if (!jsonInput.trim()) {
@@ -18,11 +19,15 @@ const JsonInput = ({ onSubmit, onClear, sampleJson, error }) => {
 
   const handleUseSample = () => {
     setJsonInput(sampleJson);
-    // Auto-submit sample data
-    setTimeout(() => {
-      onSubmit(sampleJson);
-    }, 100);
+    setIsSampleUsed(true);
   };
+
+  useEffect(() => {
+    if (isSampleUsed) {
+      onSubmit(sampleJson);
+      setIsSampleUsed(false);
+    }
+  }, [isSampleUsed, onSubmit, sampleJson]);
 
   return (
     <div className="space-y-4">
